@@ -53,9 +53,10 @@
 
     <EditText
         android:id="@+id/editTextTextPassword2"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="280dp"
         android:layout_height="50dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="56dp"
         android:background="#C5D3C6"
         android:ems="10"
         android:inputType="textPassword"
@@ -66,6 +67,19 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-160dp"
+        android:layout_marginBottom="4dp"
+        android:text="Digite sua senha"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2" />
 
     <TextView
         android:id="@+id/textView5"
@@ -79,19 +93,6 @@
         app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
         app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="-160dp"
-        android:layout_marginBottom="8dp"
-        android:text="Digite sua senha"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
-        app:layout_constraintHorizontal_bias="0.474"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2" />
 
     <Button
         android:id="@+id/button"
@@ -112,33 +113,36 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
-        app:layout_constraintVertical_bias="0.524"
+        app:layout_constraintVertical_bias="0.527"
         app:rippleColor="@color/white"
         app:strokeColor="@color/white" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="16dp"
-        android:layout_marginStart="-160dp"
-        android:layout_marginTop="8dp"
-        android:text="Esqueceu a senha?"
-        android:textColor="@android:color/holo_green_light"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
-
-    <TextView
-        android:id="@+id/textView10"
+    <Button
+        android:id="@+id/button12"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
         android:text="Cadastre-se"
-        android:textColor="#FFFFFF"
+        android:onClick="gotoCadastro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.843" />
+
+    <Button
+        android:id="@+id/button13"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="157dp"
+        android:layout_height="39dp"
+        android:text="Esqueceu sua senha?"
+        android:textSize="9sp"
+        android:onClick="gotoRecuperar"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
