@@ -41,6 +41,14 @@
             android:name=".ActivityReiniciar"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".ActivityCadastro"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ActivityRecuperar"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
